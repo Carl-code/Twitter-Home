@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css"
+    />
+    <link rel="stylesheet" href="./css/main.css" />
+    <title>Twitter</title>
+  </head>
+  <body>
+    <main>
+      <div class="container">
+        <div class="row">
+          <div class="col-12 bg-white">
+            <nav class="navbar bg-white">
+              <div class="container">
+                <a class="navbar-brand">
+                  <i class="bi bi-twitter fs-1 icon"></i>
+                </a>
+                Inicio
+                <form class="d-flex" role="search">
+                  <i class="bi bi-search search-icon"></i>
+                  <input
+                    class="form-control me-2 search-text"
+                    type="search"
+                    placeholder="Buscar en Twitter"
+                    aria-label="Search"
+                  />
+                </form>
+              </div>
+            </nav>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-3 bg-white">
+            <ul class="nav flex-column">
+              <li class="nav-item">
+                <a
+                  class="nav-link active text-dark fs-5 fw-bold"
+                  aria-current="page"
+                  href="#"
+                >
+                  <i class="bi bi-house-door-fill fs-3 me-3"></i>
+                  Inicio
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-dark fs-5 fw-bold" href="#">
+                  <i class="bi bi-hash fs-3 me-3"></i>
+                  Explorar
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-dark fs-5 fw-bold" href="#">
+                  <i class="bi bi-bell fs-3 me-3"></i>
+                  Notificaciones
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-dark fs-5 fw-bold" href="#">
+                  <i class="bi bi-envelope fs-3 me-3"></i>
+                  Mensajes
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-dark fs-5 fw-bold" href="#">
+                  <i class="bi bi-bookmark fs-3 me-3"></i>
+                  Guardados
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-dark fs-5 fw-bold" href="#">
+                  <i class="bi bi-card-text fs-3 me-3"></i>
+                  Listas
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-dark fs-5 fw-bold" href="#">
+                  <i class="bi bi-person fs-3 me-3"></i>
+                  Perfil
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-dark fs-5 fw-bold" href="#">
+                  <i class="bi bi-three-dots fs-3 me-3"></i>
+                  Más Opciones
+                </a>
+              </li>
+            </ul>
+            <button type="button" class="btn mt-3 btn-twitter">Twitter</button>
+            <div class="profile-icon mt-5">
+              <img
+                height="50px"
+                src="https://gogeticon.net/files/1925428/fa0cbc2764f70113bf2fad3905933545.png"
+                alt=""
+              />
+              <span> @UserName </span>
+              <i class="bi bi-three-dots fs-3 ms-4"></i>
+            </div>
+          </div>
+          <div class="col-6 bg-white">
+            <div class="row">
+              <div class="col-2">
+                <img
+                  height="50px"
+                  src="https://gogeticon.net/files/1925428/fa0cbc2764f70113bf2fad3905933545.png"
+                  alt=""
+                />
+              </div>
+              <div class="col-10">
+                <div class="form-floating">
+                  <textarea
+                    class="form-control border-0"
+                    placeholder="Leave a comment here"
+                    id="floatingTextarea2"
+                    style="height: 100px"
+                  ></textarea>
+                  <label for="floatingTextarea2">¿Qué está pasando?</label>
+                  <hr />
+                  <i class="bi bi-globe text-primary"></i>
+                  <span class="text-primary"
+                    >Caulquier persona puede responder</span
+                  >
+                  <div
+                    class="d-flex justify-content-between align-items-center"
+                  >
+                    <div class="icons-area">
+                      <i class="bi bi-image icon"></i>
+                      <i class="bi bi-filetype-gif icon"></i>
+                      <i class="bi bi-bar-chart-fill icon"></i>
+                      <i class="bi bi-emoji-smile-fill icon"></i>
+                      <i class="bi bi-calendar-week-fill icon"></i>
+                      <i class="bi bi-geo-alt-fill icon"></i>
+                    </div>
+                    <div>
+                      <button
+                        type="button"
+                        class="tweet btn btn-twitter less mt-2 me-4 rounded-pill"
+                      >
+                        Tweet
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <hr />
+            <div class="text-primary text-center more-tweets">
+              <span class="text-primary fw-bold">Mostrar 1,500 Tweets</span>
+            </div>
+            <hr />
+            <div class="container">
+              <div class="card border-0 rounded-3 w-80 card-hover">
+                <div class="card-body m-2">
+                  <div class="row">
+                    <div class="col-2">
+                      <img
+                        class="rounded-circle"
+                        height="50px"
+                        src="https://style.shockvisual.net/wp-content/uploads/2019/09/WSmith.jpg"
+                        alt=""
+                      />
+                    </div>
+
+                    <div class="col-9 ms-1">
+                      <h6 class="mb-0">
+                        Will Smith
+                        <i class="bi bi-patch-check-fill text-primary ms-2"></i>
+                        <i
+                          class="bi bi-twitter float-end text-primary fs-2"
+                        ></i>
+                      </h6>
+                      <p class="text-black">@willsmith</p>
+                    </div>
+                  </div>
+
+                  <div class="row">
+                    <div class="col-12">
+                      <p class="text-black fs-5 mt-1">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Sed, itaque!
+                      </p>
+
+                      <img
+                        class="rounded-4 max-width"
+                        src="https://i0.wp.com/hipertextual.com/wp-content/uploads/2022/03/soy-leyenda.jpg?fit=1920%2C1203&ssl=1"
+                        alt=""
+                      />
+                      <p class="text-primary fs-4 mb-1">#TwitterTag</p>
+                    </div>
+                  </div>
+
+                  <div class="row">
+                    <p class="text-muted fs-6">9:30pm Fb5, 2022</p>
+                  </div>
+
+                  <div class="row">
+                    <div class="col-3">
+                      <a href="#"
+                        ><i class="bi bi-chat fs-5 text-secondary"></i
+                      ></a>
+                    </div>
+                    <div class="col-3">
+                      <a href="#"
+                        ><i class="bi bi-share fs-5 text-secondary"></i
+                      ></a>
+                    </div>
+                    <div class="col-3">
+                      <a href="#"
+                        ><i class="bi bi-heart fs-5 text-secondary"></i
+                      ></a>
+                    </div>
+                    <div class="col-3">
+                      <a href="#"
+                        ><i class="bi bi-arrow-bar-up fs-5 text-secondary"></i
+                      ></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="container">
+              <div class="card border-0 rounded-3 w-80 card-hover">
+                <div class="card-body m-2">
+                  <div class="row">
+                    <div class="col-2">
+                      <img
+                        class="rounded-circle"
+                        height="50px"
+                        src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAoHCBYWFRgWFRUYGBgYGBgYGhgYGBIYGBUaGBoZGhgZGBgcIS4lHB4rHxgYJjgmKy8xNTU1GiQ7QDszPy40NTEBDAwMEA8QHBISGjQhIyExNDQxNDQ0NDQ0NDQ0NDQ0NDQ0NDQxNDQ0NDQ0NDQ0MTQ0MT8xNDQ/PzQ0PzExNDE/Mf/AABEIAOEA4QMBIgACEQEDEQH/xAAcAAABBQEBAQAAAAAAAAAAAAAEAAECAwUGBwj/xAA8EAACAQIEAwUFBwMEAgMAAAABAgADEQQSITEFQVEGYXGBkRMiMqHwFEJSscHR4Qdy8RUzksJishaDov/EABkBAAMBAQEAAAAAAAAAAAAAAAABAgMEBf/EACMRAAICAgIDAAMBAQAAAAAAAAABAhESIQMxE0FRBCIyYRT/2gAMAwEAAhEDEQA/AOHEe0gGj5ox7JRo14s0Q6JRGRvFeFhTHjRrxXhYYse8cQ/A8Pzi7HL02+hLzhVRgG58+siU0i1xyZkRTZfhaOb03Av91rWJ12PXuMAqYUKcha5G+h0MFyRB8cgS8UOfhj2zKMy9Rfl1lH2R+Y068vCPOP0nCXwoivJvRYbi0nRwrsCVUkA2Om0MkPCRTeK8vfCsBcjSVZYZofikbPZhbvPUOHDQTzbssnv+c9LwA0hdkuLRpAQXF7Q0QLGHQxiOI7THQzia07LtOdDONrRIr0BVDOw7F4rS04us01+ymKy1LR2LE9nwb3EMmVw2pcCawgA0UlFAKPnXPFniCSQSTs0pDB5LNEEkgkNjVDZoryQSPki2VaIXhFOjcjQ2IF7SoJrrDKhsNL26bgeHO0mTKVFhey2DG3z6Sa47MMjqSL3U943mXiMQR189YMmMYNc6jp5ScbDKjpMq2tc62KtbVbHTMOY5Qevh8+r7gWuNb22tzmL9sI+EnS++4v385fheKMpvcfp/jlFjQZo6jhLuoKEkpfnuvSx3l9chQNQLn3Xtz6MD6Tnf9Tt7y2F/kelhGPFi25uNNNwfLkZDi7s0yVG/T4mnw1FAF7G4A16qZcmFQjNQcDTVSAyt4jQgzlqtRGPx2Gnu5SNfH9YUgGX3Kio34GLhWPdzXS22kHF/Sckb1biVPIUdLMdCbaG2xN7zPXh1Nx7j2O+sDr1mVCKxYm9gBcn1IsRBaVRgBYrc393MLj+7SCi10PNWdPwHBMj2NiDqCNQRPQMBsJ5HhOLPSbPdbFrZQb+k7Tg3aZG91jle1xyDDoZrB1pmM/22juhAcbsZPCY1KgBVge6V446GbGJwXaczka06vtOZy1USRmbWWW8MfLUU98VRZWBYg9I6HZ7JwOtdROjp7ThuymKugnb4ZriMiy6KKKILPn4JJZZKKVQWRyx8sV44MKDIWWILFeK8KHZcGFveF+h5+ctFO6k2FuXnM2oTe0s9uQQq6nr/ABMZK2bxdLZTiRrYjTwgjp0/KdRw7g71xmb4eWgF5uUuyy2tbXl3ycqNVx5Kzzj2BHXxjLh26fLSeoUOyyAa6/pL/wD4yhIJ005CGY/Cvp5YmGf7oMmME41ttPUn4Al7je35QepwVTfNaLMfhX080amw3Hr6aS2jidCHXcHU3HpbXp1ncVOCKfesLD4RsO8mc7xDhB95l119BBTT0S+FraAvtYK5SGIFjYkEW6Zt4y4qhnK5Mq2sfevcnntcnxPKVBWRT7o1Fj1F/reAYlF0sCDzPImUkjGVoupUArki7qFZlsbXy25jla58o1Gu5JYAjLre+gk+FVTcqDawYqf7tGHoZTWfN7i3sE2B3YDS8sj0dN2e7TNSdbt7o+IXPvWLbeRnp4xwqIGHMbTwilVKLYEFcwuSOdtbdNSfSb3AuNMXVXLWZr2VittgOWugGkfRL2dJ2kOvnOaqToOONtrfvnPVoIGgSoYNUaXVTBKrTRGZ2/YnGaZe+en4J9J4j2TxWWraex8LqXUSGUjXvFK80eMDwLNFmg+aPmiyNMC/NFmg+aLNDIeCL80QeUFo14ZBgEuL7dbw/gXCTWqa6IpGY9wtoJmUFLMFF7kgT0/gnDhTRV57sep5zKcqNuOFvYZhcMFAUCwH0IclO0ZElpExOoiRIMJcqx8kKFaBGEoqi4MMdIO6xNAmZ9SncW5ch+8BxuFv7o25+Amw4EHYe7tJRV0c7xLhqlbqACBtbcd84nHEBvgt8x3+E9Dx1EsDrbT08ZwvFqGuo1301+jNoM5uXaMkVDm005ef7RVH95idDa3UHzjulr+NpTU+tputnK1RbRQMuVjYcrW1P1eEYZchzAXsQR4eEBRmW+X039IVgq12ud+m/naDBHSpiWqIpI1HXeBV5dwx9Dr4d/K8qxSyEynEzqrQSpCqq6yo05dixQ3DKmSqp757T2fxGZB4TxJlsQZ6p2OxeZFlENHcZopR7SKAjwgJJBISKce0VF5g2WLLCbRWhQZg2WNlhOWNlhQZmp2SweetmOyC/mdB+Zno1Gcp2Qw9kZ7fE1vIfRnXUknPP+md3F/KCkEnIBogYiy9THLSrNIs8CaHaDVkl15VVaJjBHSCVzYQ2oYFibkG3SSMysU5O38iczjMPmuba9Zv294jbuN/QQVwCTfTTQ/XfKizOSOWxGH5kan4vH65wR8NpoNx8x/Fpt4mnY35c/GVFCPO36EGaqRg4mNQwpPO3jsfOQejlPMG43/Tr4TSqKDcbWGndyMHxguqk3DLp+8pMzcaLOFPqQdb6f475pY+nba9j1mLgKmu3iP2m1UcFB3RdSHf6ma6SBSWNK3ea0ZZAtYTsewuL+70nFVnmt2SxWWrbqf2g0Kz2D2kUzftMeIDzYCKQzRZ5VoeLJGNI5o2aFoWLJxpDPJ0VzMB1Ig2h4tnoXZ2hlpIP/G/rrOgUbTjMJ2gVDkdSLaA2NjbYzpsLjVcBgdDORvZ6UF+qRoWvLFAg6PKquIsIDYY5A3NoM+JUfeHrORxdDE1W91rDbQm00MFwiqi6le+4vE2DVG8KgPOVO8yqrOuhF+8WsPKU/anAvv3GJsaVmkz6mUM0ppVM0lmv4SWVRRUpqx1mVxHDWFx1mxV00gmJN0I+vGCZMonMYi4tpz/AIPnKgLr0NtOhsbH9IfVW977g+UGp09NuvzE1TMJRMkudWO4PTrpM7Hva/19bidBj8Jbne9/XY/vOc4ihG/dNIuzCapDYaqbj68Zuobp4flObw3xDumxhaujDlKa2QnolUMDrPLajwSq00tGdMHdoVwmplqKe+BvJ0XsbwJPRvt/fFOU/wBQ74oqHZEvIFjJWjZZFM6G4jZjGJMnlj5I6YskV3l+CcK6ltswv4X1leWOEg0xqSs9PRKIUZ8g6ZrfKRqCkLGm4U/hvv5Tixw6piFd8xvZcmp1sbFe7T850nBeDMtM+2b3iRYLkCgWA1AsLzna0dSltaOkwTZkv3fOA487DqZdhDkQDpBatXOwHK95LejfF9lOI4wtIAAXsNddB6bnumZU7eBHKPQcW0O9/Q7bzWxOEpFlNjpr3X5Ey44TDs2dwjN1a0ca9mc09NAacYRxoSp6PoReTRry3E4am50S9vvADTzlC4F1Pu3sOtpMtPRUUmi5aXQyZFpZSSw1leJYASWWl6B6zQTE/DaTZ7mUYp/dJ7okEo0jFZjdr9w/P95ZSAuR59xsdYF7U3Ld/qB/mHcKXNdnNlXX+JqzmStkWwT1XyoNAfiOwv3x8T2ODA569j3LcfMw7iXFmRVFFQGf4dPgW9sx7zBMbwfEZVapUbMdQCx09IZNdG64YyVM43HcNeg5R+WxF7MOREuw/wAJPWdNxvhDHDq7HMVO/Ox3EwRTsoE2hLJHDzcfjk16AnEpenDCkg6TSjLJGc6SjNDawgbLKoybH9oYpDLFAR0wWStEI8Y7GtFaKKGgGtFHj00uQOpA9YaBb0drwVGSkgFh7tzfvN/1mmi31vcnS+w16CNhqQsLDTQeQ0hiU7kAcvznF2z14RxSQJiXyi0ooERY6pqYLQrHciTI6K0b9OiGHfLEo66gekrwLjLod4WpjOeS2MUA2AlFUQlxAcQYSY4xK6rWEycTV3hla7aEwTFgflM3s2joCWp8pGq4ym/fIq0qc332gkTNmO63JI67eMvZSoRT8LG/jCqOEXNpztp5zS43h0FFG2ysLeG1po2YxVNA/Z5i+IfOl1Yix/Bk29Zt9oXvlPK8N4VhFVM1rZgpEA7SvmZEXdiPIc4n0aqstEeNOowmvPQTgKhnSdo8bmy0x8KD1O05upOjiVI8/wDLnlKvgOTKqrybtAqzzc4yqs8HAjubydJIgI5IoVlijA2BFaUhpIGZZHT44ltosshmjEwyY/HEmYVwpM1ZF6tf0BP6QBjDuBVcuIQnqR/yUgfMxOToI8cckek4dLLIticjEE2J1HfJ0X0gPE6QdCvPcHmDOdaPRSswuL8cSm9nNydbKLmX4DjNGsCqmzAaqQQfQzLXhTu6kpcXtmYXNp1GG4YgFsqg9cov6x0irr2S4RU+IeYmzSeDYbCogsuvUy1l6QSJk03oKdxaZmLYfO8tqV5m4mtJkyURd9zA6ov+UktQkyLqZnZpZQyayhxCKhgrtGhMgHsdPonSalbhX2l1zvlp0/dK/jO51mQre8v9w/P+J2XsQi2vvr5neaEbvQM+JZDkRLhRYXO3QTDx1RqbF6jXqP7qgfdB6TV4nxFFWy/GfC9xacTVxLVK92N8pNh4RqNsJzwj/rGxDXJPfAqrQusZn1p0rSPNayewerA6ywsi8oqJHkD40BES2k0rqSCvKRi1QdmigftIoxG6BJgS5UkssjFGvkZTaNaEWjWhig8jByIlBBBG41H6S+0a0MQ8jO84RjM6KTvbXxhW5mH2Ye6W/Cx9DY/vFxevUVgiC+Y/V5zSVNno8Usoo6VWUAWt46S5Mp5icfTwuIK2zKL9zG0kOC1gbtXYHuCAD9YkdL41XZ1zac5Bamu85N6dcaJWLf3KfzBl+GoYksDnT/i5+V4NmcoNezo3QGV1cMJbg6TWGe1xvpYGPiam5ktWZ2ZaUbA9b6fKRrDSEMfdv4wCvW5TOjVAz7ecBqm0Md9Jm4lrXN5UUJsqfEEHTqp8wby7H8fqnTT5zOZrnwl1LD5738ppRkpO9E8NWZmBY3JlaUstVvE/OTo0irCaVTC5tRbMQPXaNNGfIm+zDqiA1hNPGUGRirix3t+0BqToRxN0CZZVVhRg1dpVCcnRnVxB7QmqZWqXMZFldooT7OKAjowY95SKkXtIWViy28V5V7SL2kLDFlsjK/aR/aQyDFm92XxQWoVOzD8v4nU49FyZhyINx05iedUa5Vgw3BvO5wWKFRARqCAROfmW7R2/jydUWU6x5beceo5bkTCKNMbWhqUx0mVHVkzMw2FN7sLTSoADYSTU9IqNE7kwolyseo9hM6rUzNaGYlhBlUb2ksAfEPoB5fvMzEnU6w3EtM2q4ERonRCq9hr3f4mPia1zYQnE1biwPpBBStqZpGJnOV6RW7WHjNTALZAet5jFi76ddJ0iUcqgDlYQkw417IineG4Lh1Sq6og2IZm2Ci/O8u4Tw16z5UG1rsdlHUzuaOHSgmRNz8Tc2PUxwi2Zc/IlpdnG9tuHAUlfS6EKSPwnTXwM8/qT2DHYMVkdG2cEeHQzyjHYB0d0O6MVPlz+us6E0jicXLozarwGs8Pq4Zpn18OwjyRL45L0CsbmE0acHUawygZRBZ7ONLcwijCiYaK8sFOSFOZ0zoyRVcxrmEeyi9lCgyQPeNcwj2cb2cKYskUXnS9ksbZjTY7+8v6j8pg+zluGco6uN1IMUotoqE0meko+v19dYVSrgbzHwuNR1DAjb07pdUrqRvOfaOxSTNVKwOspxWLyzMbFADpM7EY253itsLRoVMXc7yDYuZVSvBHxBta8MbDIPxWNBmexLGQA6ympX6RqJLlZczAd5gWJqltBtFcmF4Hh7OwCg6ygSsfguFu2Y7L+c6nhvCHxD2UEKD7zG9h/M1+C9lLAGr7q7hRozePSdVTRUUIihVGwEcYNu2RLnUVUewfCYVKCZEHiebHqZB0JhJSPltN6o43t2wF1sJ5r2+pmnXSqo911ysOrL/B+U9Mqi84j+otEGgCd0cMPMEfrFVgm1tHIKwYXGxmdi0kcHiSp12Py742LxAMzwakdvmjKG+zJxGhkUqyNdrmVCbLo4JO2F+3ig+sUYHThZNVkRJAwFZK0a0V4rwHYrRorxrwAeKRvFeAWTp1CuxIhiYxvxesAikygpFx5JRNQVGO7S1FtrMdXI2M1cEhek+U++jb72BFx+szfGzaPNF9oepKmYCZjcQcEq41G8qqY4mTia5INr15SikyOGF9TOy4R2fRUFbFOtCluM7BWcd1zdR84JPpA5KKtgHAuAvXcBVNubclHeZ6Vwrg1PDgWGZ/xEbeE5ut/ULh1BclEu4XlTRwv/JwL+Mn2d/qAmLxCUVoMgcOQ7upN1FwuQDnrzmkYV2c8+Zy0tI7MxwIiZFzLMiLvKWeO0dKF4AUvPNf6m433kog6/Gw6DUKD/wDr0nquJKU0eo5siKzMe5Rc/KfPPH+JtiK71W++xsPwqNFXyFoIGwDNLlAYWPqIJeXIYxJg2JwzL3jqJVSS800rEESzIja5QD3aQFQB7OKH+yHf8ooxUansxHFKLNHUzmzZ6XhgIUJL7NJpLVi8kjSP48Cj7J3xfZO+FXjgyfLIf/ND4B/Y++McJ3w6A4viCJzueg/WOPJJvRM+DiireiJw8yeL4goAFbUncdBHxPEWbuHQfvMnFNcjwnRFS9nByON1FDrj6g+/fxAM2OzfHvYu7OpZXte3KxOoHPeYCpJq1uUoxO84smGqItRagGY5VA+K/QreZWH4OCf9wEf+IJJ/Sc89QDKV3+t5b/qjqCoIW41KgA99rbSXEtTaNh+OLh3Iw6KzjQVHs+Q8yibE95vaYmLxtSs+es7VG/E5LHyvsO4QEvGzGUkhOTfZqUqYOk0eDY04bEUao1KVNtrh1KH/ANpg0KpBhmLe6q3Q39NYCPoPgfGlxCXAsw3Xp5zVtecB2Bq++RfdD+hno1NIiiCUYSiR0WY/azjy4PDtUOrkFUX8Tnu6DcwQmzi/6s9o8qjCU21Pv1SOQ+6nna57vGeSMYVjMQ7uzuxZ3JZmN7knWCtKEILJrIAyYMAHQ6n0l6tBqctzQAtzxSrNFEBriTWKKcp6iCEloiiks2iPJCKKQaIrxPwN4Tk23PjHim3D2cX5v8kDB8RuPCKKdZ5o9HYyFWKKSBAfXpLBuPrmYooAWnaDvFFACK7w3E/7fkYooxnq3YL/AHF/s/6z06nFFJKZcs8y/rNthv8A7P8ArFFBEnlLypoopQDLJnaPFABliMeKADRRRQA//9k="
+                        alt=""
+                      />
+                    </div>
+
+                    <div class="col-9 ms-1">
+                      <h6 class="mb-0">
+                        Elon Musk
+                        <i class="bi bi-patch-check-fill text-primary ms-2"></i>
+                        <i
+                          class="bi bi-twitter float-end text-primary fs-2"
+                        ></i>
+                      </h6>
+                      <p class="text-black">@ElonMusk</p>
+                    </div>
+                  </div>
+
+                  <div class="row">
+                    <div class="col-12">
+                      <p class="text-black fs-5 mt-1">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Sed, itaque!
+                      </p>
+
+                      <img
+                        class="rounded-4 max-width"
+                        src="https://cdn.forbes.co/2021/11/Elon-Musk-nueva-1280x720-Getty.jpg"
+                        alt=""
+                      />
+                      <p class="text-primary fs-4 mb-1">#TwitterTag</p>
+                    </div>
+                  </div>
+
+                  <div class="row">
+                    <p class="text-muted fs-6">9:30pm Fb5, 2022</p>
+                  </div>
+
+                  <div class="row">
+                    <div class="col-3">
+                      <a href="#"
+                        ><i class="bi bi-chat fs-5 text-secondary"></i
+                      ></a>
+                    </div>
+                    <div class="col-3">
+                      <a href="#"
+                        ><i class="bi bi-share fs-5 text-secondary"></i
+                      ></a>
+                    </div>
+                    <div class="col-3">
+                      <a href="#"
+                        ><i class="bi bi-heart fs-5 text-secondary"></i
+                      ></a>
+                    </div>
+                    <div class="col-3">
+                      <a href="#"
+                        ><i class="bi bi-arrow-bar-up fs-5 text-secondary"></i
+                      ></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="container">
+              <div class="card border-0 rounded-3 w-80 card-hover">
+                <div class="card-body m-2">
+                  <div class="row">
+                    <div class="col-2">
+                      <img
+                        class="rounded-circle"
+                        height="50px"
+                        src="https://cdn.theorg.com/883525c1-a37d-4d07-b9c7-6f330cc05098_small.png"
+                        alt=""
+                      />
+                    </div>
+
+                    <div class="col-9 ms-1">
+                      <h6 class="mb-0">
+                        Mark Zuckerberg
+                        <i class="bi bi-patch-check-fill text-primary ms-2"></i>
+                        <i
+                          class="bi bi-twitter float-end text-primary fs-2"
+                        ></i>
+                      </h6>
+                      <p class="text-black">@MarkZuckerberg</p>
+                    </div>
+                  </div>
+
+                  <div class="row">
+                    <div class="col-12">
+                      <p class="text-black fs-5 mt-1">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Sed, itaque!
+                      </p>
+
+                      <img
+                        class="rounded-4 max-width"
+                        src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/Mark_Zuckerberg_on_stage_at_Facebook%27s_F8_Developers_Conference_2015_%2816748468719%29.jpg/800px-Mark_Zuckerberg_on_stage_at_Facebook%27s_F8_Developers_Conference_2015_%2816748468719%29.jpg"
+                        alt=""
+                      />
+                      <p class="text-primary fs-4 mb-1">#TwitterTag</p>
+                    </div>
+                  </div>
+
+                  <div class="row">
+                    <p class="text-muted fs-6">9:30pm Fb5, 2022</p>
+                  </div>
+
+                  <div class="row">
+                    <div class="col-3">
+                      <a href="#"
+                        ><i class="bi bi-chat fs-5 text-secondary"></i
+                      ></a>
+                    </div>
+                    <div class="col-3">
+                      <a href="#"
+                        ><i class="bi bi-share fs-5 text-secondary"></i
+                      ></a>
+                    </div>
+                    <div class="col-3">
+                      <a href="#"
+                        ><i class="bi bi-heart fs-5 text-secondary"></i
+                      ></a>
+                    </div>
+                    <div class="col-3">
+                      <a href="#"
+                        ><i class="bi bi-arrow-bar-up fs-5 text-secondary"></i
+                      ></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-3 bg-light rounded-4 width-column">
+            <h5 class="p-3">Tendencias para ti</h5>
+            <ul class="nav flex-column">
+              <li class="nav-item d-inline-block position-bar">
+                <a
+                  class="nav-link active text-dark fs-5 fw-bold rounded-0"
+                  aria-current="page"
+                  href="#"
+                >
+                  <span class="d-block">Football . LIVE</span>
+                  <p class="title-tends">
+                    Robert Lewandowski llega al FC Barcelona
+                  </p>
+                  <span class="d-block total-tweets">2,500 Tweets</span>
+                  <i class="bi bi-three-dots icon-doot"></i>
+                </a>
+              </li>
+              <li class="nav-item position-bar">
+                <a class="nav-link text-dark fs-5 fw-bold rounded-0" href="#">
+                  <span class="d-block">Trending in Mexico</span>
+                  <p class="title-tends">Chabelo</p>
+                  <span class="d-block total-tweets">2,700 Tweets</span>
+                  <i class="bi bi-three-dots icon-doot"></i>
+                </a>
+              </li>
+              <li class="nav-item position-bar">
+                <a class="nav-link text-dark fs-5 fw-bold rounded-0" href="#">
+                  <span class="d-block">Music . Trending</span>
+                  <p class="title-tends">#GD_CantHelpFallingInLove</p>
+                  <span class="d-block total-tweets">2,453 Tweets</span>
+                  <i class="bi bi-three-dots icon-doot"></i>
+                </a>
+              </li>
+              <li class="nav-item position-bar">
+                <a class="nav-link text-dark fs-5 fw-bold rounded-0" href="#">
+                  <span class="d-block">Politics . Trending</span>
+                  <p class="title-tends">Covid</p>
+                  <span class="d-block total-tweets">540K Tweets</span>
+                  <i class="bi bi-three-dots icon-doot"></i>
+                </a>
+              </li>
+              <li class="nav-item position-bar">
+                <a class="nav-link text-dark fs-5 fw-bold rounded-0" href="#">
+                  <span class="d-block">War in Ukraine . LIVE</span>
+                  <p class="title-tends">
+                    Latest updates on the war in Ukraine
+                  </p>
+                  <span class="d-block total-tweets">2,500 Tweets</span>
+                  <i class="bi bi-three-dots icon-doot"></i>
+                </a>
+              </li>
+              <li class="nav-item position-bar">
+                <a class="nav-link text-dark fs-5 fw-bold rounded-0" href="#">
+                  <span class="d-block">EL PAIS México . Last night</span>
+                  <p class="title-tends">
+                    Caro Quintero, el viejo capo que revolucionó el mundo de la
+                    marihuana
+                  </p>
+                  <span class="d-block total-tweets">2,500 Tweets</span>
+                  <i class="bi bi-three-dots icon-doot"></i>
+                </a>
+              </li>
+            </ul>
+            <div class="footer">
+              <div>
+
+                <p>Terms of Service</p>
+                <p>Privacy Policy</p>
+                <p>Cookie Policy</p>
+                <p>Accessibility</p>
+              </div>
+              <div>
+
+                <p>Ads info</p>
+                <p>More ...</p>
+              </div>
+            </div>
+            &copy; 2022 Twitter, Inc.
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>

@@ -1,0 +1,88 @@
+.icon {
+  color: rgb(29, 155, 240);
+}
+.btn-twitter {
+  background-color: rgb(29, 155, 240);
+  padding: 10px 60px;
+  border-radius: 30px;
+  border: none;
+  box-shadow: rgb(0 0 0 / 8%) 0px 8px 28px;
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+}
+.icons-area i {
+  display: inline-block;
+  justify-content: space-between;
+  margin-left: 10px;
+}
+.btn-twitter.less {
+  background-color: rgb(29, 155, 240);
+  padding: 5px 15px;
+  border-radius: 20px;
+  border: none;
+  box-shadow: rgb(0 0 0 / 8%) 0px 8px 28px;
+  color: white;
+  font-size: 15px;
+  font-weight: bold;
+}
+.form-floating {
+  margin-left: -25px;
+}
+.more-tweets:hover {
+  background-color: rgba(172, 167, 167, 0.253);
+}
+.btn-twitter:hover {
+  background-color: rgb(28, 122, 186);
+  color: white;
+}
+ul li a {
+  border-radius: 30px;
+}
+ul li a:hover {
+  background-color: rgba(172, 167, 167, 0.434);
+}
+form {
+  position: relative;
+}
+.search-icon {
+  position: absolute;
+  left: 10px;
+  top: 12px;
+}
+input.search-text {
+  background-color: rgba(172, 167, 167, 0.434);
+  border-radius: 30px;
+  padding: 10px 30px;
+}
+span {
+  font-size: 12px;
+  color: gray;
+}
+.max-width {
+    max-width: 450px;
+}
+.card-hover:hover {
+    background-color: rgba(172, 167, 167, 0.434);
+}
+.title-tends {
+  font-size: 13px;
+  margin-bottom: 3px;
+}
+.total-tweets {
+  margin-top: -5px;
+}
+.position-bar {
+  position: relative;
+}
+i.icon-doot {
+  position: absolute;
+  left: 240px;
+  top: 10px;
+  font-size: 20px;
+}
+.footer {
+    display: flex;
+    justify-content: space-around;
+    font-size: 12px;
+}
